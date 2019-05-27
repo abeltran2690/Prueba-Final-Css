@@ -1,0 +1,260 @@
+body{
+  background-color:  #02010a;
+  font-family: 'Dancing Script', cursive;
+}
+h1{
+  display: inline block;
+  text-shadow: 2px 2px 2px #02010a;
+}
+  .header{
+  background-color:  #5b7989;
+  margin:auto;
+  width: 70%;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.contenedor1{
+  color: white;
+  margin-left: 10px;
+  float: left;
+  font-size: 1.5em;
+}
+.menu{
+float: right;
+margin-top: 40px;
+margin-right: 10px;
+font-size: 1.5em;
+}
+.text{
+  text-decoration: none;
+}
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+.contenedor2{
+  background-color:  #82c3a6;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+  display:inline block;
+  overflow: hidden;
+}
+
+.imagen1{
+  width: 80%;
+  margin: auto;
+  box-shadow: 2px 2px #02010a;
+}
+.contenedor3{
+  background-color:  #d5c75f;
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+}
+.imagen2 {
+  width: 90%;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 8px 8px 8px 0px #82c3a6;
+  transition: 1s;
+  transform: rotate(0deg);
+
+}
+.imagen2:hover {
+  transition: 1s;
+  transform: rotate(10deg);
+}
+.imagen3{
+  width: 90%;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 8px 8px 8px 0px #82c3a6;
+}
+.imagen3:hover{
+  transition: 1s;
+  transform: translateX(20px)
+             translateY(-5px);
+}
+figcaption{
+  font-size: 1.5em;
+  text-decoration: underline;
+  color: black;
+}
+footer {
+  background-color:  #C6d5c5;
+  margin:auto;
+  width: 70%;
+  border-radius: 0px 0px 10px 10px;
+
+}
+.footer{
+
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+
+.c1, .c2, .c3, .c4{
+  width: 25%;
+  padding: 10px;
+}
+p {
+  text-align: justify;
+}
+.c3 img{
+  width: 10%;
+  vertical-align:  text-bottom;
+}
+.c3 p{
+  text-align: center;
+}
+
+.c4 p{
+  text-align: center;
+  font-size: 1.5em;
+}
+/* Css de la pagina Paisajes*/
+
+.header2{
+background-color:  #5b7989;
+margin:auto;
+width: 70%;
+border-radius: 10px 10px 0px 0px;
+overflow: hidden;
+}
+.contenedor12{
+  color: white;
+  margin-left: 10px;
+  float: left;
+  font-size: 1.5em;
+}
+.menu2{
+float: right;
+margin-top: 40px;
+margin-right: 10px;
+font-size: 1.5em;
+}
+.imagen11,.imagen12, .imagen13, .imagen21, .imagen22, .imagen23 {
+  width: 80%;
+}
+.contenedor32{
+  background-color:  #d5c75f;
+  margin: auto;
+  width: 70%;
+  display: column;
+  flex-wrap: nowrap;
+}
+.fila{
+  	text-align: center;
+  	padding: 10px;
+  	display: flex;
+  }
+.fila div{
+    margin: auto;
+    padding: inherit;
+  }
+.imagen11{
+  -webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+.imagen12, .imagen21, .imagen23{
+  -webkit-filter: grayscale(100%);
+  filter:grayscale(100%);
+}
+.imagen13{
+  -webkit-filter: sepia(90%);
+  filter:sepia(90%);
+}
+
+
+@keyframes body-animacion {
+  0% {
+  position: relative;
+  margin-top: 150%;
+  }
+  60% {
+  position: relative;
+  margin-top: -5%;
+  }
+  100% {
+  position: relative;
+  margin-top:  0px;
+  }
+  }
+  #body{
+    animation-name: body-animacion;
+    animation-duration: 1s;
+    -webkit-animation-delay:0s;
+    -moz-animation-delay:0s;
+    -o-animation-delay:0s;
+    animation-delay: 0s;
+  }
+
+@media (max-width: 600px) {
+  .header2, .header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    }
+    h1 {
+      text-align: center;
+      padding: 0px;
+    }
+
+    navbar{
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .menu{
+      margin-top: 0;
+    }
+    .contenedor2, .figuras, footer, .contenedor32 {
+      width: 100%;
+    }
+    .contenedor3{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+   .footer{
+  width: 90%;
+     display: flex;
+     flex-direction: column;
+   }
+   .c1,.c2,.c3,.c4{
+     width: 100%;
+     margin: auto;
+   }
+  .c1 h1, .c1 p {
+    text-align: left;
+  }
+  .c2 h1, .c2 p {
+    text-align: left;
+  }
+  .c3 h1, .c3 p {
+    text-align: left;
+  }
+  .c3 img{
+    width: 5%;
+  }
+  .c4 h1, .c4 p {
+    text-align: left;
+  }
+  .c2{
+    padding: 20px;
+  }
+  .fila{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+ }
